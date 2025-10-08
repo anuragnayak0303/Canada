@@ -1106,7 +1106,7 @@ section {
 /* Contact Form Section */
 .contact-form-section {
     width: 100%;
-    background: linear-gradient(90deg, #fff8f1, #FAF6FF);
+    /* background: linear-gradient(90deg, #fff8f1, #FAF6FF); */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1156,4 +1156,301 @@ section {
     letter-spacing: 1px;
 }
 
-.contact-form-section .right-side-form-div
+.contact-form-section .right-side-form-div form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 1px solid #D9E4FE;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.contact-form-section .right-side-form-div form h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.contact-form-section .right-side-form-div form .name-div {
+    display: flex;
+    gap: 20px;
+}
+
+.contact-form-section .right-side-form-div form .from-div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+
+.contact-form-section .right-side-form-div form .from-div label {
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-family: "Roboto", sans-serif;
+    margin-left: 15px;
+
+}
+
+.contact-form-section .right-side-form-div form .from-div input,
+textarea {
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 1px solid #D9E4FE;
+    border-radius: 50px;
+    outline: none;
+    font-family: "Roboto", sans-serif;
+    transition: border-color 0.3s;
+
+}
+
+textarea {
+    border-radius: 15px;
+    resize: vertical;
+    min-height: 100px;
+}
+
+.contact-form-section .right-side-form-div form button {
+    margin: 20px 0px 0px 0px;
+    padding: 14px 32px;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    background: linear-gradient(170deg, #098DB4, #1A55D3 100%);
+    letter-spacing: 1px;
+    border-radius: 45px;
+    color: white;
+    border: none;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+    transition: background 0.3s;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+
+
+
+/* Footer */
+
+
+.achievements-section {
+    width: 100%;
+    background: linear-gradient(180deg, #F1F6FF, #FAF6FF);
+    padding: 100px 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.achievement-card {
+    width: 100%;
+    height: 280px;
+    text-align: center;
+    background-color: rgb(3, 3, 48);
+    color: white;
+    padding: 30px 20px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.achievement-card h1 {
+    font-size: 40px;
+    line-height: 38px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.achievement-card p {
+    font-size: 18px;
+    line-height: 1.6;
+    letter-spacing: 1px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 10px;
+    max-width: 200px;
+    margin: 0px auto;
+}
+
+.achievement-card:nth-child(2) {
+    background: linear-gradient(135deg, #f15d07, #fa7a2f);
+}
+
+.achievement-card:nth-child(3) {
+    background: linear-gradient(135deg, #372be2, #5a39b6);
+}
+
+.achievement-card:nth-child(4) {
+    background: linear-gradient(135deg, #33e0e6, #49c0ba);
+}
+
+
+/* CTA SECTION */
+
+
+.CTA-section {
+    width: 100%;
+    height: auto;
+    background-color: #071428;
+    padding: 40px 80px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    color: white;
+}
+
+.cta-container {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.cta-left-side {
+    width: 55%;
+    position: relative;
+}
+
+.cta-circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #182538;
+    position: absolute;
+    left: -20px;
+    top: -10px;
+    z-index: -1;
+    animation: jump 2s infinite;
+}
+
+@keyframes jump {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.cta-left-side h1 {
+    font-size: 36px;
+    line-height: 42px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.cta-left-side p {
+    font-size: 18px;
+    line-height: 1.6;
+    letter-spacing: 1px;
+    font-weight: 400;
+    text-align: left;
+    margin-top: 10px;
+    max-width: 700px;
+    margin: 0px auto;
+    font-family: 'Poppins', sans-serif;
+}
+
+.cta-right-side {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.cta-right-side button {
+    width: 100%;
+    height: auto;
+    padding: 14px 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    gap: 10px;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.cta-right-side button:first-child {
+    background: linear-gradient(170deg, #09861e, #34e724 100%);
+    color: white;
+}
+
+.cta-right-side button i {
+    font-size: 30px;
+}
+
+.cta-right-side button h4 {
+    font-size: 16px;
+    letter-spacing: 1px;
+
+}
+
+.cta-right-side button:last-child {
+    background: linear-gradient(170deg, #093186, #2489e7 100%);
+    color: white;
+    padding: 16px 17px;
+}
+
+.cta-right-side button:last-child i {
+    font-size: 24px;
+}
+
+/* CTA 2 */
+
+.cta-2-section {
+    width: 100%;
+    height: auto;
+    background-color: #071428;
+    padding: 30px 80px;
+    position: relative;
+    color: white;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cta-2-section h1{
+    font-size: 36px;
+    /* line-height: 42px; */
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-family: 'Poppins', sans-serif;
+}
+.cta-2-section button {
+    padding: 14px 32px;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    background: linear-gradient(170deg, #098DB4, #1A55D3 100%);
+    letter-spacing: 1px;
+    border-radius: 45px;
+    color: white;
+    border: none;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+    transition: background 0.3s;
+    overflow: hidden;
+    cursor: pointer;
+}
