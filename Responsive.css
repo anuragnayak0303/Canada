@@ -1,0 +1,248 @@
+@media (min-width: 1025px) and (max-width: 1440px) {}
+
+
+@media (max-width: 1024px) {
+    header {
+        padding: 40px 40px 40px 15px;
+    }
+
+    header img {
+        width: auto;
+        padding: 0;
+    }
+
+    header nav ul {
+        display: none;
+    }
+
+    section {
+        padding: 40px 30px;
+    }
+
+    .hero-section .hero-text h1 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .hero-section .hero-text h2 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .hero-section .hero-text h4 {
+        font-size: 16px;
+    }
+
+    .hero-section .hero-text p {
+        display: none;
+    }
+
+    .achievements-section {
+        padding: 30px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
+
+    .achievement-card h1 {
+        font-size: 25px;
+        line-height: 28px;
+    }
+
+
+    .about-section {
+        gap: 20px;
+    }
+
+    .about-section .about-left-side h1 {
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    .about-right-side .about-info h1 {
+        font-size: 55px;
+    }
+
+    .about-right-side .about-info {
+        margin-bottom: 10px;
+    }
+
+    .about-info p {
+        font-size: 18px;
+    }
+
+    .about-text p {
+        font-size: 14px;
+    }
+
+    .service-section {
+        padding: 40px 30px;
+    }
+
+    .service-container {
+        gap: 25px;
+    }
+
+    .service-card .featurs ul {
+        letter-spacing: 0px;
+        /* font-size: px; */
+    }
+
+    .CTA-section {
+        padding: 40px 30px;
+    }
+
+    .cta-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .cta-left-side h1 {
+        text-align: center;
+    }
+
+    .cta-left-side p {
+        text-align: center;
+    }
+
+    .cta-left-side,
+    .cta-right-side {
+        width: 100%;
+
+    }
+
+    .cta-right-side button {
+        width: auto;
+    }
+
+    .cta-2 {
+        padding: 30px;
+    }
+
+    .cta-2-section {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+    }
+
+    .cta-2-section h1 {
+        text-align: center;
+    }
+
+    .contact-form-section .left-side-contact-div h1 {
+        font-size: 30px;
+        line-height: 28px;
+        margin-bottom: 10px;
+    }
+
+    .contact-form-section .left-side-contact-div p {
+        font-size: 16px;
+        text-align: justify;
+    }
+
+    .contact-form-section .location-contact-div {
+        margin-top: 20px;
+    }
+
+    .contact-form-section .location-contact-div {
+        gap: 20px;
+    }
+
+    .location-contact-div div .icon-div img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .location-contact-div .div .icon-div {
+        gap: 8px;
+        margin-bottom: 10px;
+    }
+
+    .contact-form-section .right-side-form-div form .name-div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-form-section .location-contact-div h3 {
+        font-size: 16px;
+    }
+
+    .contact-form-section .location-contact-div span {
+        font-size: 14px;
+    }
+
+    .contact-form-section .right-side-form-div form .from-div label {
+        margin-left: 0px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .hero-section {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .hero-section .hero-text {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-section .hero-text h1 {
+        text-align: center;
+        font-size: 34px;
+    }
+
+    .hero-section .hero-text h2 {
+        text-align: center;
+    }
+
+    .hero-section .hero-text h4 {
+        text-align: center;
+    }
+
+    .hero-section .hero-text p {
+        display: block;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .hero-section .circle {
+        display: none;
+    }
+
+    .hero-section .hero-text button {
+        margin: 10px auto;
+    }
+
+    .hero-section .hero-image {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .achievements-section {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+           gap: 20px;
+    }
+
+    .achievement-card {
+        width: 100%;
+        height: auto;
+        clip-path: none;
+         border-radius: 10px;
+         padding: 20px;
+    }
+    .achievement-card h1{
+        font-size: 35px;
+           line-height: 38px;
+    }
+}

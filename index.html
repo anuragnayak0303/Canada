@@ -7,6 +7,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="Style.css">
 
+    <link rel="stylesheet" href="Responsive.css">
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
@@ -25,7 +27,7 @@
     <!-- HEro -->
     <section id="home" class="">
         <header>
-            <img src="/image/rws-logo.webp" alt="">
+            <img src="/image/rws-logo.png" alt="">
             <nav>
                 <ul>
                     <li><a href="#">Home</a></li>
@@ -77,19 +79,19 @@
     <!-- Achievements -->
     <section id="achievements" class="achievements-section">
         <div class="achievement-card">
-            <h1>500+</h1>
+            <h1><span id="counter-1">0</span> +</h1>
             <p>Happy Clients</p>
         </div>
         <div class="achievement-card">
-            <h1>1200+</h1>
+            <h1><span id="counter-2">0</span> +</h1>
             <p>Projects Completed</p>
         </div>
         <div class="achievement-card">
-            <h1>11+</h1>
+            <h1> <span id="counter-3">0</span> +</h1>
             <p>Years of Experience</p>
         </div>
         <div class="achievement-card">
-            <h1>24/7</h1>
+            <h1><span id="counter-4">0</span> hrs</h1>
             <p>Customer Support</p>
         </div>
     </section>
@@ -254,10 +256,10 @@
                 <div class="featurs">
                     <ul>
                         <li>Technical SEO</li>
-                        <li>Content Optimization</li>
+                        <li>Local SEO</li>
                     </ul>
                     <ul>
-                        <li>Local SEO</li>
+                        <li>Content Optimization</li>
                         <li>Analytics & Reporting</li>
                     </ul>
                 </div>
@@ -394,7 +396,7 @@
     </section>
 
     <!-- CTA -->
-    <div style="padding: 20px 80px;">
+    <div class="cta-2" >
         <div class="cta-2-section">
             <h1 style="font-size: 30px;">Transform Your Business with Our <br> Affordable Pricing</h1>
             <button>always Ready to Help</button>
@@ -512,7 +514,7 @@
                         TechCorp Solutions
                     </h3>
                     <p>Complete website redesign for a leading Canadian tech company</p>
-                    <button>Read More</button>
+                    <!-- <button>Read More</button> -->
                 </div>
             </div>
             <div class="blog-card">
@@ -521,7 +523,7 @@
                     <h5>E-commerce</h5>
                     <h3>ShopEasy E-commerce</h3>
                     <p>Full-featured online store with advanced inventory management</p>
-                    <button>Read More</button>
+                    <!-- <button>Read More</button> -->
                 </div>
             </div>
             <div class="blog-card">
@@ -530,7 +532,7 @@
                     <h5>Digital Marketing</h5>
                     <h3>RestaurantPro Marketing</h3>
                     <p>Patient management app for healthcare providers</p>
-                    <button>Read More</button>
+                    <!-- <button>Read More</button> -->
                 </div>
             </div>
             <div class="blog-card">
@@ -539,7 +541,7 @@
                     <h5>Web Development</h5>
                     <h3>FinanceFlow Platform</h3>
                     <p>Secure financial management platform for SMEs</p>
-                    <button>Read More</button>
+                    <!-- <button>Read More</button> -->
                 </div>
             </div>
             <div class="blog-card">
@@ -548,7 +550,7 @@
                     <h5>Mobile Apps</h5>
                     <h3>HealthCare Mobile App</h3>
                     <p>Patient management app for healthcare providers</p>
-                    <button>Read More</button>
+                    <!-- <button>Read More</button> -->
                 </div>
             </div>
             <div class="blog-card">
@@ -557,7 +559,7 @@
                     <h5>E-commerce</h5>
                     <h3>FashionHub Store</h3>
                     <p>Trendy fashion e-commerce with AR try-on features</p>
-                    <button>Read More</button>
+                    <!-- <button>Read More</button> -->
                 </div>
             </div>
         </div>
@@ -612,7 +614,21 @@
 
     <!--  -->
 
+    <section id="CTA_3" class="cta-3-section">
+        <h1>Let's Grow Your Business with</h1>
+        <h2> Rasing Websolution</h2>
 
+        <p>Ready to transform your digital presence? Join 500+ successful Canadian businesses who trust us with their
+            growth.
+        </p>
+
+        <div class="btn-container">
+            <button> <img src="/image/startup_15063761.svg" alt="" width="30px" height="30px"> Start Your
+                Projects</button>
+            <button> <img src="/image/incoming-call_6377751.svg" alt="" width="25px" height="25px"> Call Now: +91 82870
+                39634</button>
+        </div>
+    </section>
 
 
     <!-- Contact Form Section -->
@@ -818,22 +834,35 @@
 
             <div class="location-contact-div">
                 <div class="email-div div">
-                    <h1>Email</h1>
+                    <div class="icon-div">
+                        <img src="/image/send-mail_10505715.svg" alt="">
+                        <h3>Email</h3>
+                    </div>
+
                     <span>24/7 Support, Quick Replies</span>
                     <p>info@example.com</p>
                 </div>
-                <div class="phone-div">
-                    <h1>Phone</h1>
+                <div class="phone-div div">
+                    <div class="icon-div">
+                        <img src="/image/incoming-call_6377751.svg" alt="">
+                        <h3>Phone</h3>
+                    </div>
                     <span>24/7 Support, Quick Replies</span>
                     <p>+1 (234) 567-8901</p>
                 </div>
-                <div class="office-div">
-                    <h1>Office</h1>
+                <div class="office-div div">
+                    <div class="icon-div">
+                        <img src="/image/workplace_17353164.svg" alt="">
+                        <h3>Office</h3>
+                    </div>
                     <span>24/7 Support, Quick Replies</span>
                     <p>123 Main St, Anytown, USA</p>
                 </div>
-                <div class="landline-div">
-                    <h1>Landline</h1>
+                <div class="landline-div div">
+                    <div class="icon-div">
+                        <img src="/image/old-phone_8157893.svg" alt="">
+                        <h3>Landline</h3>
+                    </div>
                     <span>24/7 Support, Quick Replies</span>
                     <p>+1 (234) 567-8901</p>
                 </div>
@@ -877,7 +906,8 @@
     <footer style="background:#071428;color:#ffffff;padding:48px 20px;font-family:'Poppins',sans-serif;">
         <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;gap: 30px; ">
             <img src="image/rws-logo.webp" alt="">
-            <p style="max-width: 900px; margin: 0px auto;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur numquam, dolore nobis quae optio rerum
+            <p style="max-width: 900px; margin: 0px auto;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Tenetur numquam, dolore nobis quae optio rerum
                 quos veritatis molestias, quidem vel molestiae iste non? Consequuntur veniam eligendi sunt quod minus
                 explicabo.</p>
 
