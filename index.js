@@ -40,7 +40,7 @@ const counter4 = document.getElementById("counter-4");
 const counterSection = document.getElementById("achievements");
 
 // Function to start the counter for each counter element with different target and speed
-const startCounter = (counterElement, target ,speed) => {
+const startCounter = (counterElement, target, speed) => {
     let counter = 0;
 
     const interval = setInterval(() => {
@@ -58,10 +58,10 @@ const observer = new IntersectionObserver((entries) => {
         if (entry.isIntersecting) {
 
             // Start counters for each counter element with different targets and speeds
-            startCounter(counter1, 500 , 0.5); // Target 1500, fast speed
-            startCounter(counter2, 1000 , 0.5); // Target 2000, medium speed
-            startCounter(counter3, 11 , 50); // Target 2500, slow speed
-            startCounter(counter4, 24 , 50); // Target 2500, slow speed
+            startCounter(counter1, 500, 0.5); // Target 1500, fast speed
+            startCounter(counter2, 1000, 0.5); // Target 2000, medium speed
+            startCounter(counter3, 11, 50); // Target 2500, slow speed
+            startCounter(counter4, 24, 50); // Target 2500, slow speed
             observer.unobserve(entry.target); // Stop observing after counters start
         }
     });
@@ -69,3 +69,24 @@ const observer = new IntersectionObserver((entries) => {
 
 observer.observe(counterSection);
 
+
+
+
+// POP  Section
+const body = document.querySelector("body")
+const pop_btn = document.getElementById("pop-open-btn");
+const Close_btn = document.getElementById("close-box");
+const pop_card = document.querySelector(".pop-up"); // Use a class selector if it's a class
+
+if (pop_btn && pop_card) {
+    pop_btn.addEventListener('click', () => {
+        pop_card.classList.add("open");
+        body.style.overflow = 'hidden'
+    });
+}
+if (Close_btn && pop_card) {
+    Close_btn.addEventListener('click', () => {
+        pop_card.classList.remove("open");
+        body.style.overflow = ''
+    });
+}
