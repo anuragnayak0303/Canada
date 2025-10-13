@@ -32,12 +32,72 @@
     --radius: 8px;
 }
 
+.whatshap-app {
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #09861e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    z-index: 100;
+    transform: scale(0);
+    cursor: pointer;
+    animation: dot-grow 1.5s ease-in-out infinite; /* Slightly slower animation */
+}
+
+@keyframes dot-grow {
+    0% {
+        transform: scale(0); /* Start small */
+        opacity: 0.5;
+        box-shadow: 0 0 0 0 rgba(11, 235, 60, 0.2); /* Soft initial shadow */
+    }
+
+    30% {
+        transform: scale(1.05); /* Scale up slightly */
+        opacity: 0.8;
+        box-shadow: 0 0 12px 4px rgba(11, 235, 60, 0.3); /* Slight glow effect */
+    }
+
+    50% {
+        transform: scale(1.1); /* Maximum size */
+        opacity: 1;
+        box-shadow: 0 0 20px 10px rgba(11, 235, 60, 0.4); /* Strong glow */
+    }
+
+    70% {
+        transform: scale(1.05); /* Scale down slightly */
+        opacity: 0.8;
+        box-shadow: 0 0 12px 4px rgba(11, 235, 60, 0.3); /* Slight glow */
+    }
+
+    100% {
+        transform: scale(1); /* Reset to normal size */
+        opacity: 0.5;
+        box-shadow: 0 0 0 0 rgba(11, 235, 60, 0.0); /* No glow */
+    }
+}
+
+
+.whatshap-app i {
+    font-size: 40px;
+    color: white;
+}
+
+
+
+
+
 /* Use rems so scaling is easy */
 html {
     font-family: var(--font-base);
     font-size: var(--fs-root);
     color: var(--color-text);
     background: var(--color-bg);
+    /* overflow-x: hidden; */
 }
 
 /* background: linear-gradient(90deg, #5227FF 0%, #8A2BE2 50%, #00BFA6 100%); */
@@ -54,13 +114,13 @@ html {
     justify-content: center;
     align-items: center;
     padding: 0px;
-    transform: translateY(-100%) scale(0);
+    transform: scale(0) translateY(-100%);
     /* Start off-screen and scaled down */
     transition: transform 0.8s ease-in-out;
 }
 
 .pop-up.open {
-    transform: translateY(0px) scale(1);
+    transform: scale(1) translateY(0px);
     /* Slide up and scale to normal */
 }
 
@@ -100,7 +160,7 @@ html {
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
     padding-top: 60px;
 
 }
@@ -364,6 +424,7 @@ section {
     padding: 100px 80px 60px 80px;
     height: auto;
     width: 100%;
+    overflow-x: hidden;
 
 }
 
@@ -1476,8 +1537,8 @@ textarea {
     width: 100%;
     /* background: linear-gradient(180deg, #F1F6FF, #FAF6FF); */
     padding: 40px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    /* grid-template-columns: repeat(4, 1fr); */
     margin: 0px auto;
     justify-content: center;
     align-items: center;
@@ -1487,8 +1548,8 @@ textarea {
 }
 
 .achievement-card {
-    width: 230px;
-    height: 230px;
+    width: 180px;
+    height: 180px;
     text-align: center;
     /* background-color: #071428; */
     background: linear-gradient(170deg, #093186, #2489e7 100%);
@@ -1500,7 +1561,7 @@ textarea {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+    /* clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%); */
 }
 
 .achievement-card h1 {
